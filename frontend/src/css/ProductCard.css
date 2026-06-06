@@ -1,0 +1,189 @@
+.product-card {
+    position: relative;
+    width: min(100%, 340px);
+    border-radius: 24px;
+    overflow: hidden;
+    background: #1b3819b5;
+    filter: brightness(1.14) contrast(1.12) saturate(1.1);
+    box-shadow: 0 0 15px forestgreen;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: slideInUp 0.6s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: min(100%, 300px);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: min(100%, 230px);
+    }
+}
+
+.product-card:nth-child(1) { animation-delay: 0.1s; }
+.product-card:nth-child(2) { animation-delay: 0.2s; }
+.product-card:nth-child(3) { animation-delay: 0.3s; }
+.product-card:nth-child(4) { animation-delay: 0.4s; }
+.product-card:nth-child(5) { animation-delay: 0.5s; }
+.product-card:nth-child(6) { animation-delay: 0.6s; }
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 10px lime;
+}
+
+.product-poster {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+@media (max-width: 480px) {
+    .product-poster {
+        height: 200px;
+    }
+}
+
+.product-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 1;
+    /* filter: brightness(1.2); */
+}
+
+.product-poster .img2{
+    position: absolute;
+    inset: 0;
+    animation: slideShow 10s infinite ease-in-out;
+    opacity: 0;
+    object-fit: cover;
+}
+
+@keyframes slideShow {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.product-overlay {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 5;
+}
+
+.wishlist-btn {
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.7);
+    background: rgba(0, 0, 0, 0.639);
+    color: #fff;
+    font-size: 16px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addToCart-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.7);
+    background: rgba(0, 0, 0, 0.639);
+    color: #fff;
+    font-size: 15px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.product-card:hover .wishlist-btn,
+.product-card:hover .addToCart-btn {
+    transform: scale(1.05);
+}
+
+.wishlist-btn:hover,
+.addToCart-btn:hover {
+    background-color: rgba(255, 0, 0, 0.85);
+}
+
+.product-info {
+    padding: 18px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: #e6c562;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product-info h3 {
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    letter-spacing: 1px;
+}
+.product-info p {
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    font-size: clamp(0.65rem, 2vw, 0.75rem);
+    font-weight: 500;
+    margin: 0;
+}
+.product-info h4 {
+    line-height: 1.2;
+    font-size: clamp(0.75rem, 2vw, 0.85rem);
+    margin: 0;
+    color: #e6c562;
+}
+
+@media (max-width: 480px) {
+    .product-card{
+        box-shadow: 0 0 10px black;
+        transition: scale 0.2s ease-in-out;
+    }
+    .product-card:hover{
+        box-shadow: 0 0 10px rgb(241, 192, 156);
+    }
+    .product-info {
+        padding: 13px;
+        gap: 8px;
+        background-image: linear-gradient(rgb(241, 192, 156), rgb(70, 70, 70));
+    }
+    .product-info{
+        color: #504525;
+    }
+    .product-info p {
+        color: rgb(69, 33, 6);
+    }
+    .product-info h4{
+        color: rgb(241, 186, 146);
+        font-size: 11px;
+    }
+}
+
+.product-card:has(.wishlist-btn:active){
+    scale: 1.025;
+}

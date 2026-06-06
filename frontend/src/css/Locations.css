@@ -1,0 +1,263 @@
+
+.locations-container{
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.locations-container.with-info{
+    flex-direction: row;
+}
+
+.locations-container .locations-grid{
+    flex: 1;
+    min-width: 0;
+}
+
+.locations-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    row-gap: 24px;
+    column-gap: 24px;
+    width: 100%;
+    margin-top: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations{
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(https://wallpapers.com/images/featured/camping-desktop-06r8wb1zl0ftm5s0.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .locations {
+        background-attachment: scroll;
+    }
+}
+
+.locations h1{
+    font-size: clamp(2rem, 8vw, 4rem);
+    color: yellow;
+    font-family: bruno ace sc;
+    text-shadow: 0 0 10px black;
+    margin-bottom: 4%;
+    animation: fadeInDown 0.8s ease-out forwards;
+}
+
+.search-form{
+    position: fixed;
+    z-index: 10;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(92vw, 720px);
+    padding: 16px;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .search-form {
+        top: 110px;
+        width: min(95vw, 600px);
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-form {
+        top: 60px;
+        width: min(84vw, 400px);
+        padding: 10px;
+    }
+}
+
+.search{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .search {
+        gap: 10px;
+    }
+}
+
+.search-input{
+    height: 36px;
+    min-width: 180px;
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 7px black;
+    width: min(100%, 360px);
+    padding: 0 12px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    border: 1.5px solid black;
+}
+
+@media (max-width: 600px) {
+    .search-input {
+        height: 32px;
+        min-width: 140px;
+        width: min(100%, 260px);
+        font-size: 0.9rem;
+    }
+}
+
+.search button{
+    border-radius: 20px 30px 20px 30px;
+    padding: 2.1%;
+    box-shadow: 0 0 8px rgb(0, 0, 208);
+    font-size: small;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: box-shadow 0.6s ease;
+}
+
+button:hover{
+    animation: btnShadow 3s infinite ease-in-out;
+}
+
+@keyframes btnShadow {
+    0%{
+        box-shadow: 0 0 10px lime;
+    }
+    25%{
+        box-shadow: 0 0 10px blue;
+    }
+    50%{
+        box-shadow: 0 0 10px red;
+    }
+    75%{
+        box-shadow: 0 0 10px blue;
+    }
+    100%{
+        box-shadow: 0 0 10px lime;
+    }
+}
+
+.fav-loc-link{
+    text-decoration: none;
+    padding: 1.75%;
+    border-radius: 20px 30px 20px 30px;
+    box-shadow: 0 0 7px blue;
+    background-color: black;
+    font-size: 75%;
+    font-weight: bold;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.search-filters{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    background-color: black;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 10px blue;
+    padding: 4%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: orangered;
+    font-size: 90%;
+    line-height: 5px;
+}
+
+.search-filters-close{
+    display: none;   
+}
+
+.search-filters button{
+    padding: 1%;
+    font-size: small;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    box-shadow: 0 0 10px rgb(211, 1, 211);
+}
+
+.category{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 16px;
+    width: 100%;
+    max-width: 400px;
+    row-gap: 15px;
+    margin: 12px auto 0;
+}
+
+@media (max-width: 600px) {
+    .category {
+        max-width: 100%;
+        padding: 12px;
+        row-gap: 10px;
+        column-gap: 10px;
+        font-size: small;
+    }
+}
+
+.category label{
+    border-radius: 7px;
+    box-shadow: 0 0 5px red;
+    width: clamp(40vw, 13vw, 150px);
+    text-align: left;
+    padding: 1.5%;
+    cursor: pointer;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .category label {
+        width: 100%;
+        padding: 2%;
+    }
+}
+.category label:hover{
+    box-shadow: 0 0 14px blue;
+}
+.category label:has(input:checked){
+    box-shadow: 0 0 10px rgb(0, 180, 0);
+}
+
+.loading{
+    color: gold;
+}
+
+@media (max-width: 480px){
+    .locations{
+        background: url(https://i.pinimg.com/736x/a8/88/ef/a888efba521f24bd461325331a053b4b.jpg);
+        background-color: aqua;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    .locations-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .locations h1{
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+}

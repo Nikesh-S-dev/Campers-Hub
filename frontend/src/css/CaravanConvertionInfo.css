@@ -1,0 +1,72 @@
+.caravan-info-card{
+    width: 45vw;
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(3, 217, 245);
+    background-color: rgba(0, 0, 128, 0.491);
+    padding-bottom: 4%;
+    margin: auto;
+    margin-bottom: 7%;
+}
+
+.caravan-info img{
+    width: 100%;
+    height: 250px;
+}
+
+.caravan-info p{
+    color:rgb(12, 250, 167);
+    padding: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1.2;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.caravan-info h2{
+    color:rgb(237, 132, 12);
+    text-align: center;
+}
+
+
+.caravan-link .link{
+    padding: 2%; /*inner space*/
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 20px;
+    width: fit-content;
+    text-decoration: none;
+    color: greenyellow;
+    border: 2px solid rgb(26, 255, 0);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(3, 245, 59);
+    background-color: rgba(3, 170, 176, 0.721);
+}
+
+.caravan-info h3{
+    color: aquamarine;
+    margin-bottom: 6%;
+}
+
+@media(max-width: 480px) {
+    .caravan-info-card{
+        width: 250px;
+        margin-top: 70px;
+        padding-bottom: 25px;
+    }
+    .caravan-info img{
+        height: 200px;
+        filter: brightness(1.15) contrast(1.15) saturate(1.1);
+    }
+    .caravan-info {
+        font-size: small;
+    }
+    .caravan-info h2{
+        font-size: 16px;
+    }
+    .caravan-info .caravan-description{
+        text-align: justify;
+        font-size: 11px;
+    }
+}

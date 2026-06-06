@@ -1,0 +1,84 @@
+.wishlist-page {
+    padding: 140px 20px 40px;
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 100%;
+    background: url(https://images.squarespace-cdn.com/content/v1/643f13829e36ee2b6bb14126/b66a2f86-b384-46d0-bbdb-53fbf5f1f8a3/AdobeStock_569679641.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .wishlist-page {
+        padding: 130px 15px 30px;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    .wishlist-page {
+        padding: 130px 15px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wishlist-page {
+        padding: 120px 12px 20px;
+    }
+}
+
+.wishlist-page h1 {
+    font-size: clamp(2rem, 8vw, 4rem);
+    color: yellow;
+    font-family: bruno ace sc;
+    text-shadow: 0 0 10px black;
+    margin-top: 0;
+    animation: fadeInDown 0.8s ease-out forwards;
+}
+
+.empty-wishlist {
+    padding: 40px;
+    color: seashell;
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: 0 0 10px black;
+}
+
+.loading {
+    padding: 40px;
+    color: #333;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.wishlist-page .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .wishlist-page .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wishlist-page{
+        background: url(https://plus.unsplash.com/premium_photo-1680788451776-5875a8e5ff57?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    .wishlist-page .product-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 30px;
+    }
+}

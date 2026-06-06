@@ -1,0 +1,134 @@
+.fav-loc {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(https://wallpapers.com/images/featured/camping-desktop-06r8wb1zl0ftm5s0.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+@media (max-width: 768px) {
+    .fav-loc {
+        background-attachment: scroll;
+    }
+}
+.fav-loc h1{
+    font-size: clamp(2rem, 8vw, 4rem);
+    position: relative;
+    color: yellow;
+    font-family: bruno ace sc;
+    text-shadow: 0 0 10px black;
+    margin: 4%;
+    animation: fadeInDown 0.8s ease-out forwards;
+}
+
+.locations-container {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+    .locations-container {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .locations-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.locations-container.with-info {
+    flex-direction: row;
+}
+
+.locations-container .fav-loc-grid {
+    flex: 1;
+    min-width: 0;
+}
+
+.locationInfo-panel {
+    flex: 0 0 45%;
+    position: relative;
+    background: white;
+    background-image: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(200,230,201,0.95) 100%);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    padding: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+    .locationInfo-panel {
+        flex: 0 0 100%;
+        max-height: 50vh;
+    }
+}
+
+.locationInfo-panel button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5;
+    padding: 4px 8px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.fav-loc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    row-gap: 24px;
+    column-gap: 24px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .fav-loc-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 16px;
+    }
+}
+
+
+.fav-loc h1 {
+    text-align: center;
+}
+
+.fav-loc h2{
+    color: seashell;
+    font-size: medium;
+}
+
+@media (max-width: 480px) {
+    .fav-loc{
+        background: url(https://images.unsplash.com/photo-1625756794368-e6eb3570231c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        padding-bottom: 40px;
+        padding-top: 55px;
+    }
+    .fav-loc h1{
+        font-size: 25px;
+    }
+    .fav-loc-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 55px;
+    }
+}

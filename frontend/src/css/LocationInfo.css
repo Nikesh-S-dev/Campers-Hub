@@ -1,0 +1,338 @@
+.loactions-info-page h1, .location-info-page h2, .location-info-page h3,.location-info-page h4, .location-info-page p {
+    color: #1B262C;
+}
+
+.location-info-page {
+    position: relative;
+    width: 100%;
+    box-shadow: 0 0 10px black;
+    padding: 7%;
+    background: url(https://wallpapers.com/images/featured/camping-desktop-06r8wb1zl0ftm5s0.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.locationInfo{
+    padding: 5%;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(93, 92, 92, 0.443), rgba(27, 27, 133, 0.614), rgba(93, 92, 92, 0.443));
+}
+
+.location-images {
+    height: 60vh;
+    width: 60vw;
+    display: flex;
+    box-shadow: 0px 0px 10px rgb(204, 0, 255);
+    z-index: 10;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.slide{
+    height: 60vh;
+    width: 60vw;
+    position: absolute;
+    border-radius: 20px;
+    opacity: 1;
+    filter: brightness(1.13) contrast(1.13) saturate(1.2);  
+}
+
+#img2{
+    animation: slideShow 10s infinite ease-in-out;
+}
+
+@keyframes slideShow {
+    0%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.information{
+    margin-top: 10%;
+    border-radius: 20px;
+}
+.information h2{
+    font-size: 45px;
+    text-shadow: 0 0 10px black;
+    color: darkorange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-info{
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    height: 30vh;
+}
+.main-info h3{
+    border-radius: 20px;
+    padding: 2.4% 0% 2.4% 0%;
+    box-shadow: 0px 0px 10px black;
+    font-size: medium;
+    width: 75vw;
+    background: grey;
+}
+
+.description{
+    margin: 3%;
+    width: fit-content;
+    padding: 2%;
+    text-align: justify;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    font-size: small;
+    background: #101c418e;
+}
+.description p{
+    color: gold;
+    font-size: 15px;
+}
+.description h2{
+    font-size: large;
+    text-align: center;
+}
+
+.location-map{
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    margin: 2.5%;
+    padding: 1%;
+    padding-bottom: 4%;
+    background: #101c418e;
+}
+.location-map iframe{
+    margin-top: 2%;
+    width: 67%;
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.activities{
+    margin: 1.5%;
+    margin-top: 5%; margin-bottom: 4%;
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    background: #d5480168;
+}
+.activity-list{
+    display: flex;
+    padding: 4%;
+    column-gap: 30px;
+}
+
+.activity-card{
+    border-radius: 20px;
+    font-size: 75%;
+    box-shadow: 0 0 4px black;
+    background: #0b1a45ac;
+    width: 45%;
+}
+
+.activity-card h3,.activity-card p,.activity-card h4{ color: #d2a534; }
+
+.activity-card img{
+    border-radius: 20px 20px 0px 0px;
+    height: 40vh;
+    width: 100%;
+}
+
+.activity-info{
+    padding: 10px;
+    font-size: 15px;
+    height: fit-content;
+}
+
+
+.activity-info p{
+    margin: 1%;
+    text-align: justify;
+}
+
+.cost{
+    max-width: 45vw;
+    max-height: fit-content;
+    margin: auto;
+    margin-top: 8%;
+    padding: 4%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    background:  #101c418e;
+}
+.cost-info{
+    text-align: justify;
+    width: 100%;
+    padding: 4%;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    background: #d5480168;
+}
+.cost-info h4{
+    color: goldenrod;
+}
+
+.book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1%;
+    padding: 2%;
+    margin: 5%;
+}
+.book a{
+    text-decoration: none;
+    padding: 2%;
+    color: aliceblue;
+    background-image: linear-gradient(#463f1f,#3a5c36,#7ca151,#d2a534);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.book a:hover{
+    background-image: linear-gradient(rgb(249, 199, 199),rgb(255, 121, 121),red);
+} 
+
+@media(max-width:480px){
+    .location-info-page{
+        background: url(https://images.unsplash.com/photo-1629191917978-8302c9347f32?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .locationInfo{
+        padding: 0px;
+        width: 100%;
+        background: transparent;
+    }
+
+    .location-images,.location-images img{
+        height: 230px;
+        width: 270px;
+    }
+
+    .information h2{
+        font-size: 20px;
+    }
+    
+    .main-info{
+        flex-direction: column;
+        padding: 0px;
+        margin: 50px;
+    }
+    .main-info h3{
+        height: fit-content;
+        font-size: 12px;
+        padding: 11px;
+        color: seashell;
+    }
+
+    .description, .location-map, .activity-card, .cost{
+        background-color: rgba(7, 34, 91, 0.705);
+    }
+
+    .description{
+        margin-top: 90px;
+        margin-bottom: 100px;
+        height: fit-content;
+    }
+    .description p{
+        font-size: 13px;
+        padding: 5px;
+        padding-top: 25px;
+    }
+
+    .location-map{
+        padding: 2px;
+        padding-top: 5px;
+    }
+    .location-map iframe{
+        width: 95%;
+        margin-top: 20px;
+    }
+
+    .activities{
+        margin-top: 100px;
+        background: rgba(124, 65, 19, 0.66);
+    }
+    .activities h2{
+        margin-bottom: 30px;
+    }
+
+    .activity-list{
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .activity-card{
+        height: fit-content;
+        width: 240px;
+    }
+    
+    .activity-image img{
+        height: 140px;
+        filter: brightness(1.15) contrast(1.2) saturate(1.2);
+    }
+    .activity-info h3{
+        font-size: 12px;
+    }
+    .activity-info p{
+        font-size: 10px;
+        color: seashell;
+    }
+    .activity-info h4{
+        font-size: 11px;
+    }
+
+    .cost{
+        margin-top: 100px;
+        max-width: fit-content;
+        padding: 5px;
+        width: 85%;
+        padding-bottom: 15px;
+    }
+    .cost-info{
+        width: 90%;
+        margin: auto;
+        font-size: 12px;
+        text-align: justify;
+    }
+    .cost-info h4{
+        color: rgb(252, 192, 149);
+    }
+    
+    .book{
+        margin-top: 70px;
+        margin-bottom: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}
