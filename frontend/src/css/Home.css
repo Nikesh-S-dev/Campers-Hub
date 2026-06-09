@@ -690,6 +690,7 @@ initial-value: 0deg;
     }
     .extra-text{
         font-size: 12px;
+        font-family: Bruno Ace Sc;
     }
 
     .service-card-3:hover .service-card-content,.service-card:hover .service-card-content{
