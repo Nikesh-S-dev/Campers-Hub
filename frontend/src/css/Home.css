@@ -683,14 +683,14 @@ initial-value: 0deg;
         transform: translateY(80px);
         padding-left: 5%;
         padding-right: 5%;
-        font-family: Impact, 'Oswald';
+        font-family: 'Oswald';
     }
     .service-card-3 .service-card-content{
         transform: translateY(115px);
     }
     .extra-text{
         font-size: 12px;
-        font-family: Bruno Ace Sc;
+        font-family: 'Oswald';
     }
 
     .service-card-3:hover .service-card-content,.service-card:hover .service-card-content{
