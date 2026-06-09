@@ -197,7 +197,7 @@ filter:blur(10px)
     border-radius: 50% / 25%;
     pointer-events: none;
     color: black;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-family: 'Oswald', Impact, sans-serif;
 }
 
 .service-card-3{
