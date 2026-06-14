@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Foldit:wght@100..900&family=Rubik+Glitch&family=Rubik+Vinyl&family=Impact&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Foldit:wght@100..900&family=Oswald:wght@400;700&family=Rubik+Glitch&family=Rubik+Vinyl&display=swap');
 
 body{
     background: transparent;
@@ -197,7 +197,7 @@ filter:blur(10px)
     border-radius: 50% / 25%;
     pointer-events: none;
     color: black;
-    font-family: 'Oswald', Impact, sans-serif;
+    font-family: 'Oswald', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .service-card-3{
@@ -222,6 +222,7 @@ filter:blur(10px)
     opacity: 0;
     transition: transform 0.6s ease;
     letter-spacing: 0.6px;
+    font-family
 }
 
 .service-card-3:hover .service-card-img,.service-card:hover .service-card-img{
@@ -362,15 +363,7 @@ filter:blur(10px)
 .whatsapp:hover img{
     transform: rotate(-8deg) scale(1.2);
 }
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Foldit:wght@100..900&family=Rubik+Glitch&family=Rubik+Vinyl&display=swap');
 
-body{
-    background: transparent;
-}
-
-.homepage{
-    min-height: 99vh;
-}
 
 .logo{
     position: fixed;
@@ -616,18 +609,18 @@ initial-value: 0deg;
 }
 
 .service-card-content{
- position: absolute;
- bottom: 0;
- left: 0;
- width: 100%;
- padding: 30px 5px 30px 5px;
- background: white;
- transition: transform 0.7s ease;
- transform: translateY(100px);
- border-radius: 50% / 25%;
- pointer-events: none;
- color: black;
- font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 5px 30px 5px;
+    background: white;
+    transition: transform 0.7s ease;
+    transform: translateY(100px);
+    border-radius: 50% / 25%;
+    pointer-events: none;
+    color: black;
+    font-family: 'Oswald', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .service-card-3{
